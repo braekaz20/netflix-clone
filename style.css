@@ -6,6 +6,26 @@
 
 }
 
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 .father {
     background-color: black;
 }
@@ -50,6 +70,7 @@ nav {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    margin-right: 10px;
 }
 
 .sign-in {
@@ -99,13 +120,13 @@ h1 {
 
 h3.sec-heading {
     font-size: 1.5rem;
-    margin:10px;
+    margin: 10px;
     font-weight: 400;
 }
 
 h4 {
     font-size: 1.2rem;
-    margin-top:20px;
+    margin-top: 20px;
     font-weight: 350;
 }
 
@@ -133,12 +154,14 @@ h4 {
     font-style: normal;
 
 }
-.email:hover{
+
+.email:hover {
     height: 40.2px;
     width: 302px;
-    transition:all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     box-shadow: 2px 1px 10px red;
 }
+
 .get-started {
     background-color: red;
     color: white;
@@ -199,27 +222,31 @@ h4.enjoy {
 .tv-video {
     position: relative;
 }
-.tv-img{
+
+.tv-img {
     position: relative;
     z-index: 10;
 }
+
 .vid {
     position: absolute;
     /* border: 2px solid red; */
     top: 98px;
     left: 84.5px;
     height: 264px;
-    width:467px
+    width: 467px
 }
-.vid-trailer{
+
+.vid-trailer {
     /* position: relative; */
     width: 100%;
     height: 100%;
-    object-fit:cover;
+    object-fit: cover;
     z-index: -1;
 
 }
-.bottom{
+
+.bottom {
     /* border: 2px solid red; */
     color: white;
     font-family: "Roboto", sans-serif;
@@ -227,80 +254,95 @@ h4.enjoy {
     font-style: normal;
     font-size: 3rem;
     width: 80vw;
-    text-align:center;
-    margin:50px auto;
+    text-align: center;
+    margin: 50px auto;
 }
-.bar{
+
+.bar {
     /* border: 2px solid red; */
     background-color: rgb(38, 37, 37);
     display: flex;
-    justify-content:space-between;
-    align-items:center;
+    justify-content: space-between;
+    align-items: center;
     width: 70vw;
-    margin:20px auto;
+    margin: 20px auto;
     border-radius: 8px;
-    
+
 }
-p{
+
+p {
     padding: 15px 50px;
     color: white;
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     /* Text-align:center; */
 }
-.fa-plus{
+
+.fa-plus {
     color: white;
-    font-size: 1.5rem;
-    padding:0 50px;
+    font-size: 1.2rem;
+    padding: 0 50px;
 }
-.bar:hover{
+
+.bar:hover {
     background-color: rgb(65, 63, 63);
     cursor: pointer;
     width: 70.3vw;
-    transition:all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
     border-radius: 8px;
-    box-shadow: 1px 1px 10px red;   
-    box-shadow:2px 2px 0.5 rgb(228, 20, 20)
+    box-shadow: 1px 1px 7px red;
+    /* box-shadow:2px 2px 0.5 rgb(255, 0, 0) */
 }
 
-.fa-plus:hover{
+.fa-plus:hover {
     transform: rotate(45deg);
     transition: all 1s ease-out;
-    
+
 }
-.footer-text{
-    /* border: 1px solid rgb(250, 2, 2); */
+
+.footer-text {
+    
+    border-bottom: 1px solid rgb(250, 2, 2);
+    box-shadow: 0px 0px 10px red;
     color: white;
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
-    font-style:normal;
+    font-style: normal;
     font-size: 1.2rem;
-    Font-weight:300;
-    width: 70vw;
-    margin:auto;
-    margin-top:60px;
-    margin-bottom:40px;
+    Font-weight: 300;
+    width: fit-content;
+    margin-left: 160px;
+    margin-top: 60px;
+    margin-bottom: 40px;
 }
-.footer-link a{
+
+.footer-link a {
     /* border: 1px solid rgb(250, 2, 2); */
     color: white;
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 0.9rem;
-    text-decoration:none;
-    Font-weight:400;
+    text-decoration: none;
+    Font-weight: 400;
     /* margin-top:40px; */
 }
-.footer-link{
-    display:grid;
-    grid-template-columns: 150px 150px 150px;
-    column-gap:20vw;
-    row-gap:20px;
-    justify-content:center;
+
+.footer-link {
+    display: grid;
+    grid-template-columns: 180px 180px 180px;
+    column-gap: 17vw;
+    row-gap: 20px;
+    justify-content: center;
     /* align-items:center; */
-    flex-direction:column;
-    padding-bottom:200px;
+    flex-direction: column;
+    padding-bottom: 200px;
+}
+
+.footer-link a:hover {
+    font-size: 1rem;
+    text-shadow: red 1px 0 10px;
+    transition: all 0.5s ease-in-out;
 }
