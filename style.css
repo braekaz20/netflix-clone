@@ -304,14 +304,13 @@ p {
 
 .footer-text {
     
-    border-bottom: 1px solid rgb(250, 2, 2);
-    box-shadow: 0px 0px 10px red;
+    border-bottom: 2px solid rgb(250, 2, 2);
     color: white;
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 1.2rem;
-    Font-weight: 300;
+    Font-weight: 400;
     width: fit-content;
     margin-left: 160px;
     margin-top: 60px;
@@ -326,7 +325,7 @@ p {
     font-style: normal;
     font-size: 0.9rem;
     text-decoration: none;
-    Font-weight: 400;
+    Font-weight: 350;
     /* margin-top:40px; */
 }
 
@@ -343,6 +342,6 @@ p {
 
 .footer-link a:hover {
     font-size: 1rem;
-    text-shadow: red 1px 0 10px;
+    text-shadow: red 2px 0 10px;
     transition: all 0.5s ease-in-out;
 }
