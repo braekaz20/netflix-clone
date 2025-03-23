@@ -1,615 +1,154 @@
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-
-
-}
-
-html,
-body {
-    overflow-x: hidden;
-    width: 100%;
-}
-
-.fade-in {
-    animation: fadeIn 2s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.father {
-    background-color: rgb(0, 0, 0);
-}
-
-main {
-    /* border-bottom: 6px solid rgb(98, 96, 96); */
-    height: 90vh;
-    /* width: 100%; */
-
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./assets/images/bg.jpg);
-    object-fit: cover;
-    background-position: center center;
-    background-size: cover;
-
-    background-repeat: no-repeat;
-}
-
-nav {
-    display: flex;
-    width: 80vw;
-    margin: auto;
-    padding-top: 25px;
-    justify-content: space-between;
-    align-items: center;
-    /* border: 1px solid white; */
-}
-
-.logo {
-    height: auto;
-    width: 150px;
-    /* width: 10vw; */
-    height: 10vh;
-}
-
-.N {
-    height: 40px;
-    width: auto;
-    display: none;
-}
-
-.lang {
-    text-decoration: none;
-    color: white;
-    border: 2px solid white;
-    border-radius: 8px;
-    padding: 7px;
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    margin-right: 10px;
-}
-
-.sign-in {
-    text-decoration: none;
-    color: white;
-    /* border: 1px solid white; */
-    background-color: red;
-    border-radius: 8px;
-    padding: 8px;
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-
-}
-
-.hero {
-    /* border: 1px solid white; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    width: 60vw;
-    height: auto;
-    margin: auto;
-    margin-top: 60px;
-
-}
-
-h1,
-h3.sec-heading,
-h4 {
-
-    color: white;
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    text-align: center;
-}
-
-h1 {
-    /* margin:10px; */
-    font-size: 3.5rem;
-    font-weight: 700;
-}
-
-h3.sec-heading {
-    font-size: 1.5rem;
-    margin: 10px;
-    font-weight: 400;
-}
-
-h4 {
-    font-size: 1.2rem;
-    margin-top: 20px;
-    font-weight: 350;
-}
-
-.input {
-    /* border: 1px solid white; */
-    margin-top: 20px;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-
-}
-
-.email {
-    height: 40px;
-    width: 300px;
-    border: 1px solid rgb(215, 215, 215);
-    background-color: rgba(35, 34, 34, 0.759);
-    border-radius: 10px;
-    color: white;
-    font-family: "Gidole", sans-serif;
-    font-weight: 600;
-    padding: 10px;
-    font-style: normal;
-
-}
-
-.email:hover {
-    height: 40.2px;
-    width: 302px;
-    transition: all 0.5s ease-in-out;
-    box-shadow: 2px 1px 10px red;
-}
-
-.get-started {
-    background-color: red;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    border-radius: 10px;
-    padding: 11px 40px;
-    color: white;
-    font-family: "Gidole", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-hr {
-    height: 8px;
-    background-color: rgb(35, 34, 34);
-    border: none;
-}
-
-.first {
-    /* box-shadow: 0px 5px 400px 10px red; */
-    z-index: -100;
-
-}
-
-.fa-arrow-down {
-    position: absolute;
-    z-index: 100;
-    height: 25px;
-    width: 25px;
-    border: 4px solid red;
-    border-radius: 50%;
-    /* padding: 0.88px; */
-    color: rgb(255, 255, 255);
-    background-color: rgb(255, 0, 0);
-    text-align: center;
-    font-size: 1rem;
-    font-weight: bolder;
-    margin: 10px 49.5%;
-
-        animation: slide 2s cubic-bezier(0.58, 0.04, 0.49, 1.05) infinite alternate;
-
-}
-
-@keyframes slide {
-    from {
-        margin-top: 10px
-    }
-
-    to {
-        margin-top: 20px
-    }
-}
-
-.tv-box {
-    /* border: 2px solid red; */
-    width: 80vw;
-    height: auto;
-    /* background-color:black; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-
-}
-
-/* .enjoy1 {
-    margin-top: 130px;
-} */
-
-.tv-text {
-    /* border: 1px solid white; */
-    width: fit-content;
-    height: fit-content;
-
-}
-
-h3.enjoy {
-    color: white;
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 3.5rem;
-    text-align: left;
-    padding: 10px;
-}
-
-h4.enjoy {
-    color: white;
-    font-size: 1.5rem;
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    text-align: left;
-    padding: 10px;
-    margin-top: -5px;
-}
-
-.tv-video {
-    position: relative;
-
-}
-
-.tv-img {
-    position: relative;
-    z-index: 10;
-}
-
-.vid {
-    position: absolute;
-    /* border: 2px solid red; */
-    top: 98px;
-    left: 84.5px;
-    height: 264px;
-    width: 467px
-}
-
-.vid-trailer {
-    /* position: relative; */
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-
-}
-
-.bottom {
-    /* border: 2px solid red; */
-    color: white;
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 3rem;
-    width: 80vw;
-    text-align: center;
-    margin: 50px auto;
-}
-
-.bar {
-    /* border: 2px solid red; */
-    background-color: rgb(38, 37, 37);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 70vw;
-    margin: 20px auto;
-    border-radius: 8px;
-
-}
-
-p {
-    padding: 15px 50px;
-    color: white;
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 1.2rem;
-    /* Text-align:center; */
-}
-
-.fa-plus {
-    color: white;
-    font-size: 1.2rem;
-    padding: 0 50px;
-}
-
-.bar:hover {
-    background-color: rgb(65, 63, 63);
-    cursor: pointer;
-    width: 70.3vw;
-    transition: all 0.7s ease-in-out;
-    border-radius: 8px;
-    box-shadow: 1px 1px 7px red;
-    /* box-shadow:2px 2px 0.5 rgb(255, 0, 0) */
-}
-
-.fa-plus:hover {
-    transform: rotate(45deg);
-    transition: all 1s ease-out;
-
-}
-
-.footer-text {
-
-    border-bottom: 2px solid rgb(250, 2, 2);
-    color: white;
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 1.2rem;
-    Font-weight: 400;
-    width: fit-content;
-    margin-left: 175px;
-    margin-top: 60px;
-    margin-bottom: 40px;
-}
-
-.footer-link a {
-    /* border: 1px solid rgb(250, 2, 2); */
-    color: white;
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 0.9rem;
-    text-decoration: none;
-    Font-weight: 350;
-    /* margin-top:40px; */
-}
-
-.footer-link {
-    display: grid;
-    grid-template-columns: 180px 180px 180px;
-    column-gap: 17vw;
-    row-gap: 20px;
-    justify-content: center;
-    /* align-items:center; */
-    flex-direction: column;
-    padding-bottom: 200px;
-}
-
-.footer-link a:hover {
-    font-size: 1rem;
-    text-shadow: red 2px 0 10px;
-    transition: all 0.5s ease-in-out;
-}
-
-@media screen and (max-width:500px) {
-    main {
-        height: 80vh
-    }
-
-    .logo {
-        display: none
-    }
-
-    .N {
-        display: block
-    }
-
-    nav {
-        width: 85vw;
-        padding-top: 40px;
-    }
-
-    .lang {
-        margin-right: 5px;
-        font-size: 0.8rem;
-    }
-    .sign-in {
-        font-size: 0.8rem;
-    }
-
-    .hero {
-        /* border: 1px solid white; */
-        width: 80vw;
-        height: 30vh;
-        margin-top: 80px;
-
-    }
-
-    h1 {
-        /* margin:10px; */
-        font-size: 1.8rem;
-        font-weight: 700;
-    }
-
-    h3.sec-heading {
-        font-size: 1rem;
-        margin: 10px;
-        font-weight: 500;
-    }
-
-    h4 {
-        font-size: 1.2rem;
-        margin-top: 50px;
-        padding: 0 10px;
-        font-weight: 350;
-    }
-
-    .input {
-        flex-direction: column;
-        margin-top: 40px;
-    }
-    .get-started{
-        font-size:0.9rem;
-    }
-
-    @keyframes slide {
-        from {
-            margin-top: 40px
-        }
-
-        to {
-            margin-top: 60px
-        }
-    }
-
-    .tv-box {
-        /* border: 2px solid red; */
-        width: auto;
-        height: auto;
-        /* background-color:black; */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-
-    }
-
-    .tv-text {
-        /* border: 1px solid white; */
-        width: fit-content;
-        height: fit-content;
-        padding-top: 20px;
-    }
-
-    h3.enjoy {
-        color: white;
-        font-family: "Roboto", sans-serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-        font-size: 1.5rem;
-        text-align: center;
-        padding: 10px;
-    }
-
-    h4.enjoy {
-        color: white;
-        font-size: 1rem;
-        font-family: "Roboto", sans-serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-        text-align: center;
-        padding: 10px;
-        margin-top: -5px;
-    }
-
-    .tv-video {
-        position: relative;
-        /* border: 4px solid red; */
-        /* width: 300px; */
-
-    }
-
-    .tv-img {
-        position: relative;
-        object-fit: cover;
-        width: 400px;
-        z-index: 10;
-    }
-
-    .vid {
-        position: absolute;
-        /* border: 2px solid red; */
-        top: 61px;
-        left: 52px;
-        height: 165px;
-        width: 293px;
-    }
-
-    .pic img {
-        /* background-color:  */
-        width: 400px;
-    }
-
-    .pic2 img {
-        /* background-color:  */
-        width: 300px;
-    }
-
-    .enjoy1 {
-        margin-top: 100px
-    }
-
-    .bottom {
-        /* border: 2px solid red; */
-        font-size: 1.5rem;
-        width: 80vw;
-        text-align: center;
-        margin: 50px auto;
-    }
-
-    .bar {
-        /* border: 2px solid red; */
-        width: 90vw;
-        margin: 20px auto;
-        margin: 10px auto;
-    }
-
-    p {
-        padding: 15px 50px;
-        color: white;
-
-        font-size: 1rem;
-        /* Text-align:center; */
-
-    }
-
-    .bottom-ready h4 {
-        /* background-color: aqua; */
-        /* border: 1px solid white; */
-        width: 80vw;
-        height: auto;
-        margin: auto;
-        margin-top: 40px;
-        color: white;
-        font-family: "Roboto", sans-serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-        text-align: center;
-    }
-
-    .footer-text {
-        /* border: 1px solid white;z */
-        font-size: 1rem;
-        Font-weight: 400;
-        width: fit-content;
-        /* margin-left:50px; */
-        margin: auto;
-        margin-top: 60px;
-        margin-bottom: 40px;
-    }
-
-    .footer-link a {
-        /* border: 1px solid rgb(250, 2, 2); */
-        font-size: 0.9rem;
-        text-decoration: none;
-        Font-weight: 350;
-        /* margin-top:40px; */
-    }
-
-    .footer-link {
-        display: grid;
-        grid-template-columns: 80px 80px 80px;
-        column-gap: 15px;
-        row-gap: 20px;
-        justify-content: center;
-        /* align-items:center; */
-        flex-direction: column;
-        padding-bottom: 200px;
-    }
-
-
-}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pankaj India – Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gidole&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3650b0d2e7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="father">
+        <main class="fade-in">
+            <div class="opacity"></div>
+            <nav>
+                <img class="logo" src="./assets/images/logo.svg" alt="logo">
+                <img class="N" src="./assets/images/Netflix_2015_N_logo.svg" alt="">
+                <div class="top-btn">
+                    <a class="lang" href="#">English</a>
+                    <a class="sign-in" href="#">Sign In</a>
+                </div>
+            </nav>
+            <div class="hero">
+                <h1>Unlimited movies, TV shows and more</h1>
+                <h3 class="sec-heading">Starts at ₹149. Cancel at any time</h3>
+                <h4>Ready to watch? Enter your email to create or restart your membership</h4>
+            </div>
+            <div class="input">
+                <input class="email" type="email" placeholder="Email Address">
+                <a class="get-started" href="#">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+            
+        </main>
+        <hr class="first">
+        <i class="fa-solid fa-arrow-down"></i>
+        <div class="tv-box enjoy1">
+            <div class="tv-text">
+                <h3 class="enjoy">Enjoy on your TV</h3>
+                <h4 class="enjoy">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more
+                </h4>
+
+            </div>
+            <div class="tv-video">
+                <img class="tv-img" src="./assets/images/tv.png" alt="">
+                <div class="vid">
+                    <video class="vid-trailer" src="./assets/videos/video-tv-in-0819.m4v" autoplay muted loop></video>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+        <div class="tv-box">
+
+            <div class="tv-video pic">
+                <img src="./assets/images/mobile-0819.jpg" alt="mobile">
+            </div>
+            <div class="tv-text">
+                <h3 class="enjoy">Download your shows to watch offline</h3>
+                <h4 class="enjoy">Save your favourites easily and always have something to watch
+                </h4>
+            </div>
+        </div>
+        <hr>
+        <div class="tv-box">
+            <div class="tv-text">
+                <h3 class="enjoy">Watch everywhere</h3>
+                <h4 class="enjoy">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV
+                </h4>
+
+            </div>
+            <div class="tv-video">
+                <img class="tv-img" src="./assets/images/tv.png" alt="">
+                <div class="vid">
+                    <video class="vid-trailer" src="./assets/videos/videoplayback.mp4" autoplay muted loop></video>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+        <div class="tv-box">
+
+            <div class="tv-video pic2">
+                <img src="./assets/images/Children.png">
+            </div>
+            <div class="tv-text">
+                <h3 class="enjoy">Create profiles for kids</h3>
+                <h4 class="enjoy">Send children on adventures with their favourite characters in a space made just for them—free with your membership
+                </h4>
+            </div>
+        </div>
+        <hr>
+        <h2 class="bottom">Frequently Asked Questions</h2>
+        <div class="bar">
+            <p>What is NetFlix</p>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="bar">
+            <p>How much does Netflix cost?</p>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="bar">
+            <p>What can I watch on Netflix?</p>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="bar">
+            <p>Where can I watch?</p>
+            <i class="fa-solid fa-plus"></i>
+        </div>
+        <br>
+        <hr>
+        <div class="bottom-ready">
+            <h4>Ready to watch? Enter your email to create or restart your membership</h4>
+        </div>
+        <div class="input">
+            <input class="email" type="email" placeholder="Email Address">
+            <a class="get-started" href="#">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <footer>
+            <h3 class="footer-text">Questions? Call 000-800-919-1694</h3>
+            <div class="footer-link">
+                <a href="">FAQ</a>
+                <a href="">Help Centre</a>
+                <a href="">Account</a>
+                <a href="">Media Centre
+                </a>
+                <a href="">Investor Relations
+                </a>
+                <a href="">Jobs</a>
+                <a href="">Ways to Watch
+                </a>
+                <a href="">Terms of Use
+                </a>
+                <a href="">Privacy</a>
+                <a href="">Cookie Preferences
+                </a>
+                <a href="">Corporate Information
+                </a>
+                
+                <a href="">Speed Test</a>
+                <a href="">Legal Notices
+                </a>
+                <a href="">Only on Netflix
+                </a>
+                
+            </div>
+        </footer>
+</body>
+
+</html>
